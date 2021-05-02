@@ -1,0 +1,673 @@
+li{
+    display: inline-block;
+}
+
+
+/* section 1 starts below */
+.section1{
+    width: 100vw;
+    height: 56.32vw;
+    position: relative;
+    max-height: 100vh;
+}
+
+.section-1-background {
+    width: 100vw;
+    height:56.32vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.section-1-background img{
+    width: 100%;
+    height: auto;
+}
+.section-1-content{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.sec-1-header{
+    width: 100%;
+    height: 5%;
+    padding: 0px 4%;
+    z-index: 3;
+}
+
+.sec-1-header-left{
+    float: left;
+    width: 45%;
+    max-width: 378px;
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-icon{
+    width: 8vw;
+    max-width: 35px;
+}
+
+.hamburger-icon img{
+    width: 100%;
+    height: auto;
+}
+.nav-bar{
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+    padding-bottom: 10px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.section1 li{
+    margin-top: 9px;
+    display: block;
+}
+.sec-1-header-left li a{
+    margin-top: 9px;
+    margin-right: 18px;
+}
+.sec-1-header-left li a :last-child{
+    margin-right: 0px;
+}
+@media screen and (min-width:992px) {
+    .hamburger-icon{
+        display: none;
+    }
+    .nav-bar{
+        position: relative;
+        width: 100%;
+        padding-bottom: 0px;
+        height: 100%;
+    }
+    .nav-bar li{
+        display: inline-block;
+    }
+}
+
+.sec-1-header-mid{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 11px;
+    left: 0px;
+}
+.logo{
+    max-width: 62px;
+    margin: 0 auto;
+}
+.logo img{
+    width:100%;
+    height: auto;
+}
+
+
+.sec-1-header-right{
+    min-width: 100px;
+    max-width: 175px;
+    width: 30vw;
+    float: right;
+    margin-top: 11px;
+}
+
+.search-form{
+    min-width: 100px;
+    position: relative;
+}
+.search-input{
+    width: 80%;
+    outline: none;
+}
+.search-form span{
+    float: right;
+    margin: 3px 5px 0px 0px;
+}
+
+
+.sec-1-body-wrapper{
+    height:86%;
+
+}
+.sec-1-body{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.sec-1-body-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sec-1-body-content-above{
+    margin-bottom: 2.5vw;
+}
+
+.sec-1-body-content-below button{
+    padding: 2px 12px;
+}
+
+.scrolldown-button{
+    padding: 2px 3px;
+    min-width: 123px;
+    margin: 0 auto;
+    width: 11%;
+}
+
+@media screen and (min-width: 768px) {
+    .sec-1-body-content-below button{
+        padding: 8px 24px;
+    }
+    .scrolldown-button{
+        padding: 6px 12px;
+    }
+
+}
+
+/* three line header for all sections */
+
+header{
+    padding: 3% 0px;
+    text-align: center;
+}
+
+.header-top{
+    margin-bottom: 0.5em;
+}
+.header-line{
+    width: 3%;
+    margin: 0 auto;
+}
+.header-bottom{
+    margin-top: 1em;
+}
+
+/* section 2 starts below */
+
+.sec-2-col{
+    display: inline-block;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+
+
+.sec-2-col-img{
+    height: 143px;
+    width: 143px;
+    margin: 27px auto;
+}
+.sec-2-col-img img{
+    margin:  34px auto 0px;
+}
+
+.sec-2-col p{
+    padding: 20px 0px;
+    line-height: 1.2em;
+}
+.sec-2-col-btn{
+    margin: 5px 0px 5.9vw;
+    padding: 9px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .sec-2-col{
+        width:32%;
+    }
+}
+
+/* section 3 below */
+
+.section-3{
+    padding: 0px 9.4%;
+    text-align: center;
+}
+.sec-3-category-ul{
+    width: fit-content;
+    margin: 5vw auto;
+    overflow: hidden;
+    font-size: 1px;
+}
+.category{
+    display: block;
+}
+.sec-3-category-ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+@media screen and (min-width: 425px) {
+
+    .category{
+        display: inline;
+    }
+    .sec-3-category-ul li a{
+        display: inline;
+        line-height: 2em;
+    }
+}
+
+.sec-3-image-gallery{
+    width: 100%;
+    font-size: 0px;
+
+}
+
+
+.sec-3-image{
+    display: inline-block;
+    width: 35vw;
+    height: 35vw;
+    margin: 3px;
+    overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .sec-3-image{
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+.sec-3-image img{
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sec-3-btn{
+    padding: 12px 22px 15px;
+    margin: 45px auto;
+}
+
+/* section 4 below */
+.section-4{
+    width: 100%;
+}
+
+.sec-4-content-wrapper{
+    padding: 42px 0px 61px;
+    position: relative;
+}
+
+.left-slider-btn{
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.right-slider-btn{
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.sec-4-content p{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.speaker-wrapper{
+    width: 26%;
+    margin: 0 auto;
+}
+
+.speaker-profile-pic{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    border: 2px solid gray;
+    overflow: hidden;
+    float: left;
+    margin-right: 8px;
+}
+
+.speaker-profile-pic img{
+    width: 2.5vw;
+    object-fit: contain;
+    margin: 0.5vw;
+}
+
+/* section-5 below */
+.section-5{
+    text-align: center;
+}
+.sec-5-content{
+    width: 80vw;
+ margin: 0 auto;
+}
+
+
+.client{
+    width: 50%;
+    float: none;
+    min-width: 152px;
+    min-height: 63px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    position: relative;
+}
+@media screen and (min-width: 425px){
+    .client{
+        float: left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .client{
+        width: 33.33%;
+    }
+}
+
+
+.client img{
+    width: initial;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec-5-btn-wrapper{
+    width: 100vw;
+}
+
+.sec-5-btn{
+    padding: 15px 15px;
+    margin: 59px 0px;
+}
+
+.sec-5-btn span:first-child{
+    padding: 18px;
+}
+
+/* section 6 below */
+
+.section-6{
+    text-align: center;
+}
+
+.sec-6-content-wrapper{
+    text-align: center;
+}
+.sec-6-content{
+    display: inline-block;
+    width: 32%;
+    float: none;
+}
+@media screen and (min-width: 768px) {
+    .sec-6-content{
+        width: 19%;
+    }
+}
+.member-image{
+    width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.member-image img{
+    width: 100%;
+    height: auto;
+}
+
+.person-1{
+    transform: scale(.8);
+    margin-top: -0.5vw;
+}
+
+.person-2{
+    padding-top: 1.2vw;
+    padding-left: 0.68vw;
+    transform: scale(1.3);
+}
+.person-3{
+    transform: scale(0.7);
+    margin-top: -0.8vw;
+}
+
+.person-4{
+    transform: scale(1.05);
+    margin-top: 1.19vw;
+    margin-left: -0.4vw;
+}
+.person-5{
+    transform: scale(1.5);
+    margin-top: 3.8vw;
+}
+
+.vertical-line{
+    border-right: 1px solid black;
+    width:0px;
+    height: 77px;
+    margin: 10px auto;
+}
+.member-name{
+    padding: 13px 0px;
+}
+.contact-icon-wrapper{
+    margin: 1vw auto;
+    padding-top: 3px;
+    min-width: 87px;
+    width: 7.1vw;
+}
+
+.contact-icon{
+    padding: 3px;
+}
+
+.sec-6-btn{
+    padding: 12px 25px 15px;
+    margin: 2vw auto;
+}
+
+/* section 7 below */
+
+.section-7{
+    width:100%;
+    padding-top: 20px;
+}
+
+.sec-7-content{
+    width:33.33%;
+    float: left;
+}
+
+.sec-7-about-us{
+    padding: 15px 33px 78px;
+    text-align: center;
+}
+.sec-7-about-us p{
+    margin: 31px;
+}
+
+.sec-7-recent-post-wrapper{
+    padding: 10px;
+
+}
+
+.recent-post{
+    display: inline-block;
+    min-width: 227px;
+    padding:3px 0px;
+    margin: 0px 5px;
+    overflow: auto;
+}
+.recent-post img{
+    float: left;
+    min-width: 52px;
+    min-height: 52px;
+    width: 4.6vw;
+    height: 4.6vw;
+    object-fit: cover;
+    margin-right: 7px;
+}
+.recent-post-content{
+    padding: 7px 0px 7px;
+}
+.recent-post-content p{
+    padding-bottom: 5px;
+}
+.magazine{
+    width: 86px;
+    padding: 2px;
+}
+
+.contact-us-wrapper{
+    text-align: center;
+    padding: 7px 30px 30px; 
+}
+.contact-us-text{
+    padding-bottom: 27px;
+}
+.contact-us-form input{
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 2px;
+}
+
+.message-field{
+    width: 100%;
+    height: 11.2vw;
+}
+.contact-us-form button{
+    width: 100%;
+    padding: 12px;
+}
+
+
+    
+.about-us-media-query, .recent-post-media-query, .contact-us-media-query{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .sec-7-content{
+        display: block;
+    }
+    .about-us-media-query{
+        width: 100%;
+    }
+    .about-us-media-query p{
+        margin: 0px;
+    }
+    .recent-post-media-query, .contact-us-media-query{
+        width: 50%;
+        padding: 0px 5vw;
+    }
+    .recent-post{
+        margin: 0px;
+    }
+}
+
+
+
+/* section-8 below */
+.section-8{
+    width: 100vw;
+}
+.the-new-york-times{
+    display: inline-block;
+}
+.the-new-york-times img{
+    width: 100%;
+    height: auto;
+}
+
+.sec-8-content-wrapper{
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .sec-8-content{
+        display: table;
+        width: 100%;
+    } 
+    .sec-8-media{
+        display: table-cell;
+    }
+    .sec-8-media img{
+        object-fit: contain;
+    }
+    
+    .sec-8-content-wrapper{
+        padding: 0 3vw 3vw;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .sec-2-col{
+        width: 33.33%;
+        float: left;
+        padding: 0px 5.9vw;
+    }
+
+
+    .sec-3-image{
+        display: inline-block;
+        width: 14%;
+        min-width: 0px;
+        height: 12.6vw;
+        margin: 15px;
+
+    }
+
+
+    .section-4{
+        width: 65%;
+        margin: 0 auto;
+    }
+ 
+    .client{
+        width: 25%;
+        min-height: 10vw;
+        height: auto;
+        font-size: 0px;
+        line-height: 0px;
+        float: left;
+        position: relative;
+    }
+
+    .sec-6-content-wrapper{
+        padding: 54px 14.7%;
+        width:100%;
+    }
+    
+
+    .sec-6-content{
+        width: 20%;
+        float: left;
+    }
+    
+
+    
+    .about-us-media-query, .recent-post-media-query, .contact-us-media-query{
+        width: 33.33%;
+    }
+    .recent-post{
+        min-width: 235px;
+    }
+
+    .the-new-york-times{
+        display: inline-block;
+        max-width: 350px;
+    }
+
+}
