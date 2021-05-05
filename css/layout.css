@@ -331,7 +331,7 @@ header{
     min-width: 187px;
     height: auto;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
 }
 
