@@ -66,6 +66,7 @@ li{
 .section1 li{
     margin-top: 9px;
     display: block;
+    padding-left: 18px;
 }
 .sec-1-header-left li a{
     margin-top: 9px;
@@ -111,7 +112,7 @@ li{
 
 .sec-1-header-right{
     min-width: 100px;
-    max-width: 175px;
+    max-width: 177px;
     width: 30vw;
     float: right;
     margin-top: 11px;
@@ -128,6 +129,12 @@ li{
 .search-form span{
     float: right;
     margin: 3px 5px 0px 0px;
+}
+@media screen and (min-width:1440px) {
+    .search-form span{
+        margin-top: 0px;
+    }
+    
 }
 
 
@@ -640,6 +647,10 @@ header{
 
 @media screen and (min-width: 992px) {
 
+
+    .sec-1-header-left li{
+        padding-left: 0px;
+    }
     .scrolldown-button{
         min-width: 180px;
     }

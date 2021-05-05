@@ -15,6 +15,10 @@ a{
 button{
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 1px 2px 3px 1px #828181;
 }
 
 
@@ -76,6 +80,7 @@ button{
     background-color: #54d154;
     color: #FFFFFF;
     font-size: .75em;
+    cursor: pointer;
 }
 @media screen and (min-width: 576px) {
     .sec-1-body-content-above{
@@ -91,6 +96,10 @@ button{
     text-align: center;
     background-color: rgba(255,255,255,65%);
     border-radius: 25px;
+    cursor: pointer;
+}
+.scrolldown-button:hover{
+    box-shadow: 1px 2px 3px 0px #333333;
 }
 .scrolldown-button span:first-child{
     margin-right: 10px;
