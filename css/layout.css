@@ -36,8 +36,8 @@ li{
 
 .sec-1-header-left{
     float: left;
-    width: 45%;
-    max-width: 378px;
+    width: 45vw;
+    
     position: relative;
     z-index: 2;
 }
@@ -86,6 +86,9 @@ li{
     }
     .nav-bar li{
         display: inline-block;
+    }
+    .sec-1-header-left{
+        min-width: 378px;
     }
 }
 
@@ -153,7 +156,7 @@ li{
 
 .scrolldown-button{
     padding: 2px 3px;
-    min-width: 123px;
+    min-width: 130px;
     margin: 0 auto;
     width: 11%;
 }
@@ -235,11 +238,13 @@ header{
 .category{
     display: block;
 }
+
 .sec-3-category-ul li a {
     display: block;
     width: 100%;
     height: 100%;
     padding: 20px;
+    font-size: 1rem;
 }
 @media screen and (min-width: 425px) {
 
@@ -294,6 +299,7 @@ header{
 .sec-4-content-wrapper{
     padding: 42px 0px 61px;
     position: relative;
+    overflow: auto;
 }
 
 .left-slider-btn{
@@ -314,24 +320,39 @@ header{
 }
 
 .speaker-wrapper{
-    width: 26%;
+    width: 19vw;
+    min-width: 187px;
+    height: auto;
     margin: 0 auto;
+    overflow: auto;
+    position: relative;
 }
 
 .speaker-profile-pic{
     width: 4vw;
     height: 4vw;
+    min-width: 45px;
+    min-height: 45px;
     border-radius: 100%;
     border: 2px solid gray;
     overflow: hidden;
     float: left;
     margin-right: 8px;
+    position: relative;
 }
 
 .speaker-profile-pic img{
-    width: 2.5vw;
+    width: 77%;
     object-fit: contain;
-    margin: 0.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.speaker-detail{
+    position: relative;
+    top: 0.5vw;
 }
 
 /* section-5 below */
@@ -483,6 +504,10 @@ header{
     float: left;
 }
 
+.section-7 .header-top{
+    font-size: 1.2em;
+}
+
 .sec-7-about-us{
     padding: 15px 33px 78px;
     text-align: center;
@@ -493,12 +518,15 @@ header{
 
 .sec-7-recent-post-wrapper{
     padding: 10px;
-
+    width: 80%;
+    margin: 0 auto;
 }
 
 .recent-post{
-    display: inline-block;
-    min-width: 227px;
+    display: block;
+    width: 25vw;
+    min-width: 235px;
+
     padding:3px 0px;
     margin: 0px 5px;
     overflow: auto;
@@ -610,9 +638,11 @@ header{
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
 
-
+    .scrolldown-button{
+        min-width: 180px;
+    }
     .sec-2-col{
         width: 33.33%;
         float: left;
@@ -622,7 +652,7 @@ header{
 
     .sec-3-image{
         display: inline-block;
-        width: 14%;
+        width: 12.6vw;
         min-width: 0px;
         height: 12.6vw;
         margin: 15px;
@@ -662,12 +692,16 @@ header{
         width: 33.33%;
     }
     .recent-post{
-        min-width: 235px;
     }
 
     .the-new-york-times{
         display: inline-block;
         max-width: 350px;
     }
-
+    .section-8-media{
+        padding-right: 7vw;
+    }
+    .section-8-media:last-child{
+        padding-right: 0px;
+    }
 }
